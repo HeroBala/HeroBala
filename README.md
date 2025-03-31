@@ -6,4 +6,3 @@ Here’s a little about me:
 🤖 I enjoy using AI to enhance productivity and efficiency in my work.
 📫 How to reach me: 1997herobala@gmail.com
 😄 Pronouns: He/Him
-⚡ Fun fact: I once got a job without even submiting my cv or any other documents!
