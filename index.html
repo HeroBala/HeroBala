@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Bala - Data Engineer</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <h1><span style="color: red;">|</span> Hero Bala <span style="color: red;">|</span></h1>
+        <p><span id="title-effect"></span></p>
+    </header>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="button">Home</a>
+        <a href="#about" class="button">About Me</a>
+        <a href="#portfolio" class="button">Portfolio</a>
+        <a href="#contact" class="button">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+        &#9776; <!-- Hamburger icon -->
+    </div>
+    <!-- Overlay Navigation -->
+<div class="overlay" id="overlay">
+    <div class="overlay-content">
+         <!-- Close Button -->
+        <span id="close-overlay" class="close-btn">&#10006;</span>
+        <a href="index.html" class="button">Home</a>
+        <a href="#about" class="button">About Me</a>
+        <a href="#portfolio" class="button">Portfolio</a>
+        <a href="#contact" class="button">Contact</a>
+    </div>
+</div>
+    <!-- End of Overlay Navigation -->
+</div>
+
+<section id="intro" class="intro">
+    <div class="container2">
+        <h2>Welcome to my personal website!</h2>
+        <p><span id="typing-effect"></span></p>
+        <a href="about.html" class="button">Learn More</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container2">
+        <p>I am an aspiring Data Engineer with a passion for creating efficient, high-performance data platforms. I have strong expertise in Python, SQL, and cloud technologies.</p>
+        <ul>
+            <h3>Skills</h3>
+            <li>Data Analytics & Business Intelligence: Power BI, Excel, Dashboard Development</li>
+            <li>Database Management: SQL, PostgreSQL</li>
+            <li>Cloud Technologies: Azure DevOps, Google BigQuery</li>
+            <li>Version Control & CI/CD: Git, GitHub/GitLab, Docker</li>
+            <li>Automation & PLC Programming</li>
+        </ul>
+        <p>Feel free to explore my portfolio and contact me for any collaboration or opportunities.</p>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio">
+    <div class="container2">
+        <h2>Featured Projects</h2>
+        <div class="project">
+            <h3>Data Engineering Optimization</h3>
+            <p>Worked on optimizing the ETL processes for the CEZ Group, increasing data efficiency by 30%.</p>
+        </div>
+        <div class="project">
+            <h3>Automation & PLC Programming</h3>
+            <p>Designed and implemented PLC systems for industrial automation, improving system efficiency and reducing downtime.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container2">
+        <h2>Get in Touch</h2>
+        <p>Feel free to reach out for collaborations, project inquiries, or if you want to discuss any of my work.</p>
+        <form action="php/contact-form.php" method="post" id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>        
+    </div>
+</section>
+
+
+<footer>
+    <div class="footer-content">
+        <h2>Find Me On Map</h2>
+        <p>📍 Brno, Czech Republic</p>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20849.568161260548!2d16.609380934765632!3d49.215809500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129533ae9c5587%3A0xf26d02b22d77f397!2sHERO%20BALA!5e0!3m2!1sen!2scz!4v1743773018857!5m2!1sen!2scz" 
+                style="border:0; width: 100%; height: 400px;" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p>&copy; 2025 Hero Bala. All Rights Reserved. <br> 📞 +420 608 147 604 | 📧 1997herobala@gmail.com</p>
+    </div>
+</footer>
+
+<script src="js/scripts.js"></script> <!-- Link to external JavaScript -->
+
+</body>
+</html>
