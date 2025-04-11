@@ -512,6 +512,7 @@ footer {
     border-bottom: #ff0000 2px solid; /* Red underline for the title */
     padding-bottom: 1px;
     text-align: center; /* Center the title */
+    text-shadow: #ff0000 0.5px 0.5px 0.5px; /* Text shadow for header */
 }
 .footer-content p {
     font-size: 1.1rem;
