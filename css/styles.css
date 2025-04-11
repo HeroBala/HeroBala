@@ -34,6 +34,7 @@ body {
     margin-top: 20px; /* Adds space from the top */
     margin-bottom: 30px; /* Adds space from the bottom */
     background-color: #000000; /* Container background color */
+    background-image: url('../images/nav-bg.png'); /* Background image for the container */
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -53,9 +54,9 @@ body {
 /* Ensure the header text does not get squeezed */
 h1 {
     margin-left: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
-    text-shadow: rgb(28, 215, 63) 0.5px 0.5px 0.5px; /* Text shadow for header */
+    text-shadow: rgba(255, 255, 255, 0.459) 1px 1px 1px; /* Text shadow for header */
     font-weight: 600; /* Bold font weight for header */ 
 
 }
@@ -87,7 +88,7 @@ p {
     margin: 0 10px;
     border-radius: 50px; /* Rounded corners */
     background-color:#ffffff; /* Green background color */
-    border-color:#29C37E ; /* Green border color */ 
+    border-color: red 2px solid; /* Red border color */
     transition: all 0.3s ease;
 }
 
@@ -259,6 +260,7 @@ section.intro::after {
     animation: fadeIn 1s ease-out;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
 }
 
 .intro p {
@@ -303,14 +305,14 @@ section.about {
 .about h2 {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     border-bottom: red 2px solid; /* Red underline for the title */
     text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
     padding-bottom: 10px; /* Padding for the title */
 }
 
 .about p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.8;
 }
@@ -370,6 +372,7 @@ section.portfolio {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 10px;
+    margin-bottom: 20px;
     border-bottom: red 2px solid; /* Red underline for the title */
     text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
 }
@@ -389,10 +392,25 @@ section.portfolio {
 .project:hover {
     transform: translateY(-5px);
 }
-
+.project a {
+    text-decoration: none;
+    color: #000000; /* White color for the link */
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: red;
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.project a:hover {
+    background-color: #ff0000;
+    color: #ffffff; /* White color for the link */
+}
 .project h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
 }
 
 .project p {
@@ -515,13 +533,13 @@ footer {
     text-shadow: #ff0000 0.5px 0.5px 0.5px; /* Text shadow for header */
 }
 .footer-content p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 200;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
     color: #000000; /* White color for the text */
     padding: 10px; /* Padding for the text */
     border-radius: 10px; /* Rounded corners */
-    background-color: rgba(255, 255, 255, 0.973); /* Light background color for the text */
+    background-color: rgba(177, 177, 177, 0.973); /* Light background color for the text */
 }
 /* Animations */
 @keyframes fadeIn {
