@@ -32,10 +32,10 @@ body {
     max-width: 1200px; /* Maximum width of the container */
     margin: 0 auto; /* Centers the container on the page */
     margin-top: 20px;
-    background-color: #0606077c; /* Container background color */
-    border-color: green; /* Border color */
+    background-color: #7d7d9c7c; /* Container background color */
+    border-color: rgb(255, 255, 255); /* Border color */
     border-style: solid; /* Solid border style */
-    border-width: 1px; /* Border width */
+    border-width: 4px; /* Border width */
     border-radius: 50px; /* Rounded corners */
 }
 
@@ -82,8 +82,8 @@ p {
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 50px; /* Rounded corners */
-    background-color: rgb(0, 0, 0);
-    border-color: rgb(255, 255, 255); /* Change border color to purple */
+    background-color: rgb(1, 59, 20);
+    border-color: rgb(60, 63, 48); /* Change border color to purple */
     transition: all 0.3s ease;
 }
 
@@ -188,10 +188,9 @@ p {
     gap: 10px;
     margin-top: 1px;
     color: white;
-    border: #ddd 0.5px solid;
     padding: 10px 10px; 
     border-radius: 50px;
-    background-color: #000000;
+    background-color: #045502;
     text-decoration: none;
 }
 .button:hover {
@@ -205,11 +204,14 @@ section.intro {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
     color: white;
     padding: 80px 0;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px; /* Rounded corners */
 }
 .container2 {
     display: flex;
@@ -256,9 +258,12 @@ section.intro {
 }
 /* About Section */
 section.about {
-    background-color: #000000;
+    background-color: #423e3e;
     padding: 10px 0;
     text-align: center;
+    border-radius: 30px; /* Rounded corners */
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .about h2 {
@@ -290,9 +295,10 @@ section.about {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
+    max-width: 1800px;
     border: 2px solid #ddd;
-    border-radius: 10px;
+    background-color: rgba(7, 75, 5, 0.61);
+    border-radius: 30px;
 }
 
 .about ul li {
@@ -317,7 +323,7 @@ section.portfolio {
 }
 
 .portfolio h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -347,7 +353,10 @@ section.portfolio {
 
 /* Contact Section */
 section.contact {
-    background-color: #000000;
+    background-color: #423e3e;
+    border-radius: 30px; /* Rounded corners */
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid #ddd;
@@ -430,7 +439,7 @@ footer {
 }
 .footer-content h2
 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 600;
     color: #ffffff; /* Green color for the title */
