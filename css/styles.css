@@ -53,7 +53,7 @@ body {
 /* Ensure the header text does not get squeezed */
 h1 {
     margin-left: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(255, 255, 255);
     text-shadow: rgb(28, 215, 63) 0.5px 0.5px 0.5px; /* Text shadow for header */
     font-weight: 600; /* Bold font weight for header */ 
@@ -66,7 +66,7 @@ p1 {
 }
 p {
     margin: 5px 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #ffffff;
     padding: 10px; /* Softer color for subtitle */
 }
@@ -102,6 +102,8 @@ p {
     font-size: 30px;
     cursor: pointer;
     color: rgb(250, 0, 0);
+    margin-right: 20px;
+    transition: color 0.3s ease;
 }
 /* Overlay Styles */
 .overlay {
@@ -128,6 +130,15 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(177, 174, 174, 0.582);
+    border: #000000 2px solid;
+    border-radius: 30px; /* Rounded corners */
 }
 
 .overlay a {
@@ -242,7 +253,7 @@ section.intro::after {
 }
 
 .intro h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 600;
     animation: fadeIn 1s ease-out;
@@ -290,7 +301,7 @@ section.about {
 
 
 .about h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 30px;
     border-bottom: red 2px solid; /* Red underline for the title */
@@ -352,6 +363,7 @@ section.portfolio {
     margin-bottom: 20px;
     margin-left: 10%;
     margin-right: 10%;
+    border-radius: 30px; /* Rounded corners */
 }
 
 .portfolio h2 {
@@ -407,7 +419,7 @@ section.contact {
 
 
 .contact h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
     border-bottom: red 2px solid; /* Red underline for the title */
