@@ -101,7 +101,7 @@ p {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: rgb(250, 0, 0);
 }
 /* Overlay Styles */
 .overlay {
@@ -111,20 +111,20 @@ p {
     left: 0;
     max-width: 600px;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 0, 0);
     z-index: 999;
     opacity: 100%;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.9s ease;
 }
 
 .overlay.active {
     display: inline-block;
-    opacity: 1;
+    z-index: 9999;
 }
 
 .overlay-content {
     position: absolute;
-    top: 50%;
+    top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -132,18 +132,14 @@ p {
 
 .overlay a {
     font-size: 24px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     display: block;
+    background-color: red;
     margin: 15px;
     transition: background-color 0.3s;
 }
 
-.overlay a:hover {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 10px;
-}
 /* Close Button Style */
 .close-btn {
     position: right;
@@ -156,14 +152,8 @@ p {
     transition: color 0.3s ease;
 }
 
-.close-btn:hover {
-    color: #ffffff;
-}
-
-
-
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .navbar {
         display: flex;
         flex-direction: column;
@@ -175,6 +165,7 @@ p {
 
     .navbar.active {
         display: flex;
+        background-color: red;
 
     }
 
@@ -185,7 +176,7 @@ p {
 
     .navbar a {
         margin: 10px 0;
-        background-color: red;
+        background-color: rgb(5, 5, 5);
     }
 }
 
@@ -302,6 +293,9 @@ section.about {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 30px;
+    border-bottom: red 2px solid; /* Red underline for the title */
+    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
+    padding-bottom: 10px; /* Padding for the title */
 }
 
 .about p {
@@ -364,6 +358,8 @@ section.portfolio {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 10px;
+    border-bottom: red 2px solid; /* Red underline for the title */
+    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
 }
 
 .project {
@@ -413,7 +409,10 @@ section.contact {
 .contact h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: red 2px solid; /* Red underline for the title */
+    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */   
+
 }
 
 form input,
@@ -524,7 +523,7 @@ footer {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     header h1 {
         font-size: 2.5rem;
     }
