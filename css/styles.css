@@ -53,7 +53,8 @@ body {
 
 /* Ensure the header text does not get squeezed */
 h1 {
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     text-shadow: rgba(255, 255, 255, 0.459) 1px 1px 1px; /* Text shadow for header */
@@ -135,7 +136,7 @@ p {
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 50%;
+    width: 35%;
     padding: 20px;
     background-color: rgba(177, 174, 174, 0.582);
     border: #000000 2px solid;
@@ -144,7 +145,7 @@ p {
 
 .overlay a {
     font-size: 24px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     display: block;
     background-color: red;
