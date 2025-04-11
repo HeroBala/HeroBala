@@ -52,7 +52,7 @@ body {
 
 /* Ensure the header text does not get squeezed */
 h1 {
-    margin-left: 145px;
+    margin-left: 10px;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     text-shadow: rgb(28, 215, 63) 0.5px 0.5px 0.5px; /* Text shadow for header */
@@ -112,7 +112,7 @@ p {
     max-width: 600px;
     height: 100%;
     background-color: rgb(253, 0, 0);
-    z-index: 999;
+    z-index: 9999;
     opacity: 100%;
     transition: opacity 0.9s ease;
 }
@@ -124,7 +124,7 @@ p {
 
 .overlay-content {
     position: absolute;
-    top: 150%;
+    top: 250%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
