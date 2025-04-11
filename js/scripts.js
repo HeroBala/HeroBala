@@ -27,26 +27,26 @@ function type() {
 
 type();
 
-// Second typing effect for the title string "Data Engineer | Electrical Engineer | Innovator"
-const titles = "Data Engineer | Electrical Engineer | Innovator";
-let titleIndex = 0;
-const titleEffect = document.getElementById("title-effect");
+// // Second typing effect for the title string "Data Engineer | Electrical Engineer | Innovator"
+// const titles = "Data Engineer | Electrical Engineer | Innovator";
+// let titleIndex = 0;
+// const titleEffect = document.getElementById("title-effect");
 
-function typeTitle() {
-    if (titleIndex < titles.length) {
-        titleEffect.textContent += titles.charAt(titleIndex);
-        titleIndex++;
-        setTimeout(typeTitle, 120); // Adjust typing speed here
-    } else {
-        setTimeout(() => {
-            titleEffect.textContent = ""; // Clear text for looping
-            titleIndex = 0;
-            typeTitle();
-        }, 2000); // Pause before restarting the title effect
-    }
-}
+// function typeTitle() {
+//     if (titleIndex < titles.length) {
+//         titleEffect.textContent += titles.charAt(titleIndex);
+//         titleIndex++;
+//         setTimeout(typeTitle, 120); // Adjust typing speed here
+//     } else {
+//         setTimeout(() => {
+//             titleEffect.textContent = ""; // Clear text for looping
+//             titleIndex = 0;
+//             typeTitle();
+//         }, 2000); // Pause before restarting the title effect
+//     }
+// }
 
-typeTitle();
+// typeTitle();
 
 // JavaScript for opening and closing the overlay
 const hamburger = document.getElementById('hamburger');
@@ -71,7 +71,7 @@ overlay.addEventListener('click', (event) => {
 });
 
 // JavaScript for smooth scrolling to sections with animation
-const links = document.querySelectorAll('a[href^="#"]');
+const links = document.querySelectorAll('a[href^="#about"], a[href^="#projects"], a[href^="#contact"]');
 links.forEach(link => {
     link.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default anchor click behavior
