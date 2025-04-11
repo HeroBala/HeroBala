@@ -15,29 +15,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Background color for the page */
+    background-color: #ffffff; /* Background color for the page */
     color: white; /* Default text color */
 }
 
 /* Container styling */
 .container {
-    position: -webkit-sticky; /* Fixed position to stay on top of the viewport */
+    position: relative; /* Sticky position to stay on top of the viewport */
+    top: 10px; /* Sticks to the top of the viewport with a 10px offset */
     left: 0; /* Aligns to the left of the viewport */
     right: 0; /* Aligns to the right of the viewport */
-    top: 10; /* Sticks to the top of the viewport */
     display: flex;
     justify-content: space-between; /* Aligns children to opposite sides */
     align-items: center; /* Centers content vertically */
     padding: 10px;
     max-width: 1200px; /* Maximum width of the container */
-    margin: 0 auto; /* Centers the container on the page */
-    margin-top: 20px;
-    background-color: #7d7d9c7c; /* Container background color */
-    border-color: rgb(255, 255, 255); /* Border color */
-    border-style: solid; /* Solid border style */
-    border-width: 4px; /* Border width */
+    margin: 0 auto; /* Centers the container horizontally */
+    margin-top: 20px; /* Adds space from the top */
+    margin-bottom: 30px; /* Adds space from the bottom */
+    background-color: #000000; /* Container background color */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     border-radius: 50px; /* Rounded corners */
 }
+
 
 /* Header styling */
 .header {
@@ -75,15 +77,15 @@ p {
 
 /* Button styling (links) */
 .navbar a.button {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none; /* Remove underline */
     font-size: 1rem;
     font-weight: 400;
     padding: 10px 20px;
     margin: 0 10px;
     border-radius: 50px; /* Rounded corners */
-    background-color: rgb(1, 59, 20);
-    border-color: rgb(60, 63, 48); /* Change border color to purple */
+    background-color:#33ff00; /* Green background color */
+    border-color:#29C37E ; /* Green border color */ 
     transition: all 0.3s ease;
 }
 
@@ -187,10 +189,10 @@ p {
     justify-content: center;
     gap: 10px;
     margin-top: 1px;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 10px; 
     border-radius: 50px;
-    background-color: #045502;
+    background-color: #04ff00;
     text-decoration: none;
 }
 .button:hover {
@@ -204,15 +206,35 @@ section.intro {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(11, 255, 43);
+    text-shadow: rgb(0, 0, 0) 0.5px 0.5px 0.5px; /* Text shadow for header */
     padding: 80px 0;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 30px; /* Rounded corners */
+    position: relative; /* This is needed to position the ::after pseudo-element */
+    overflow: hidden; /* Ensures no overflow of the blurred background */
 }
+
+section.intro::after {
+    content: ''; /* Creates an empty pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/header\ bg.png'); /* Your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Adjust the blur level */
+    z-index: -1; /* Places the blurred image behind the content */
+}
+
+
 .container2 {
     display: flex;
     flex-direction: column;
@@ -257,14 +279,20 @@ section.intro {
     }
 }
 /* About Section */
+/* About Section */
 section.about {
-    background-color: #423e3e;
+    background-image: url('../images/bg.png'); /* Adjusted path to go up one level */
+    background-size: cover;
+    background-position: center; /* Centers the image */
     padding: 10px 0;
     text-align: center;
     border-radius: 30px; /* Rounded corners */
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
+
 
 .about h2 {
     font-size: 2.5rem;
@@ -297,7 +325,7 @@ section.about {
     margin-right: auto;
     max-width: 1800px;
     border: 2px solid #ddd;
-    background-color: rgba(7, 75, 5, 0.61);
+    background-color: rgba(0, 0, 0, 0.61);
     border-radius: 30px;
 }
 
@@ -318,8 +346,14 @@ section.about {
 /* Portfolio Section */
 section.portfolio {
     background-color: #000000;
+    background-image: url('../images/project-bg.png'); /* Replace with the image path */
+    background-size: cover; /* Ensure the image covers the entire section */
     padding: 20px 0;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .portfolio h2 {
@@ -353,14 +387,21 @@ section.portfolio {
 
 /* Contact Section */
 section.contact {
-    background-color: #423e3e;
+    background-color: #020202;
+    background-image: url('../images/contact-bg.png'); /* Replace with the image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
     border-radius: 30px; /* Rounded corners */
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 20px 0;
     text-align: center;
     border-top: 1px solid #ddd;
 }
+
 
 .contact h2 {
     font-size: 2.5rem;
@@ -426,25 +467,36 @@ form button:active {
 footer {
     text-align: center;
     background-color: #000000; /* Dark background color */
-    color: white;
+    background-image: url('../images/footer-bg.png'); /* Replace with the image path */
+    background-size: cover; /* Ensure the image covers the entire footer */
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
     padding: 10px;
     font-size: 14px;
-    position: sticky;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 30px; /* Rounded corners */      
+    position:sticky;
 }
 .footer-content {
     max-width: 1500px; /* Limit the width of the footer content */
     margin: 0 auto; /* Center the footer content */
     padding: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .footer-content h2
 {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 600;
-    color: #ffffff; /* Green color for the title */
+    color: #000000; /* Green color for the title */
 }
-
+.footer-content p {
+    font-size: 1.1rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: #000000; /* White color for the text */
+}
 /* Animations */
 @keyframes fadeIn {
     0% {
