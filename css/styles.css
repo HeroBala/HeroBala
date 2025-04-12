@@ -128,7 +128,7 @@ p {
 
 .overlay-content {
     position: absolute;
-    top: 260%;
+    top: 255%;
     left: 47%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -137,19 +137,19 @@ p {
     margin-top: 20px;
     margin-bottom: 15px;
     width: 75%;
-    padding: 20px;
+    padding: 15px;
     background-color: rgba(177, 174, 174, 0.582);
-    border: #000000 2px solid;
+    border: #ffffff 2px solid;
     border-radius: 30px; /* Rounded corners */
 }
 
 .overlay a {
-    font-size: 24px;
+    font-size: 1.2rem;
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: block;
     background-color: red;
-    margin: 15px;
+    margin: 10px;
     transition: background-color 0.3s;
 }
 
@@ -161,7 +161,7 @@ p {
     font-size: 30px;
     color: rgb(255, 0, 0);
     background-color: black;
-    border: red 0.5px solid;
+    border: rgb(255, 255, 255) 0.5px solid;
     border-radius: 100%; /* Rounded corners */
     padding: 10px;
     cursor: pointer;
