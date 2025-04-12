@@ -97,7 +97,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-
 // JavaScript for smooth scrolling to sections with animation
 const links = document.querySelectorAll('a[href^="#about"], a[href^="#projects"], a[href^="#contact"]');
 links.forEach(link => {
