@@ -64,37 +64,38 @@ type();
 // typeTitle();
 
 // JavaScript for opening and closing the overlay
-const hamburger = document.getElementById('hamburger');
-const overlay = document.getElementById('overlay');
-const closeButton = document.getElementById('close-overlay');
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById('hamburger');
+    const overlay = document.getElementById('overlay');
+    const closeButton = document.getElementById('close-overlay');
 
-// Open overlay when hamburger is clicked
-hamburger.addEventListener('click', () => {
-    overlay.classList.toggle('active');
-    hamburger.style.display = 'none'; // Hide the hamburger icon
-});
+    if (hamburger && overlay && closeButton) {
+        hamburger.addEventListener('click', () => {
+            overlay.classList.add('active');
+            hamburger.style.display = 'none';
+        });
 
-// Close overlay when close button (×) is clicked
-closeButton.addEventListener('click', () => {
-    overlay.classList.remove('active');
-    hamburger.style.display = 'block'; // Show the hamburger icon
-});
+        closeButton.addEventListener('click', () => {
+            overlay.classList.remove('active');
+            hamburger.style.display = 'block';
+        });
 
-// Close overlay when clicking outside of the overlay content
-overlay.addEventListener('click', (event) => {
-    if (event.target === overlay) {
-        overlay.classList.remove('active');
-        hamburger.style.display = 'block'; // Show the hamburger icon
+        overlay.addEventListener('click', (event) => {
+            if (event.target === overlay) {
+                overlay.classList.remove('active');
+                hamburger.style.display = 'block';
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            if (overlay.classList.contains('active')) {
+                overlay.classList.remove('active');
+                hamburger.style.display = 'block';
+            }
+        });
     }
 });
 
-// Hide overlay when user scrolls
-window.addEventListener('scroll', () => {
-    if (overlay.classList.contains('active')) {
-        overlay.classList.remove('active'); // Remove the overlay if it's active
-        hamburger.style.display = 'block'; // Show the hamburger icon
-    }
-});
 
 
 // JavaScript for smooth scrolling to sections with animation
