@@ -269,9 +269,8 @@ section.intro::after {
 }
 
 .intro p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 30px;
-    font-weight: 400;
     margin-left: auto;
     margin-right: auto;
     animation: fadeIn 1.5s ease-out;
@@ -279,7 +278,7 @@ section.intro::after {
 /* Typing effect */
 #typing-effect {
     display: inline;
-    border-right: 2px solid black;
+    border-right: 2px solid rgb(255, 0, 0);
     animation: blink 0.7s step-end infinite;
 }
 

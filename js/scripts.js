@@ -1,11 +1,26 @@
 // First typing effect for the array of texts
 const texts = [
-    "I am a Data Engineer with a strong foundation in Python programming, SQL, and data analytics.",
-    "I am passionate about optimizing high-performance data platforms.",
-    "I have a keen interest in UI and UX design, creating intuitive and user-friendly interfaces.",
-    "I am exploring the fascinating world of Machine Learning and Artificial Intelligence.",
-    "I enjoy solving complex problems and turning data into actionable insights."
+    "\"Data Analytics\"", "\"Business Intelligence\"", "\"Power BI\"", "\"Excel\"", "\"KPI Monitoring\"", "\"Dashboard Development\"",
+    "\"SQL\"", "\"PostgreSQL\"", "\"Database Management\"",
+    "\"Python\"", "\"C++\"", "\"Java\"", "\"MATLAB\"", "\"Programming Languages\"",
+    "\"Data Pipeline Development\"", "\"Data Warehousing\"", "\"ETL\"",
+    "\"Machine Learning Algorithms\"", "\"Predictive Analytics\"", "\"Advanced Data Analytics\"",
+    "\"Git\"", "\"GitHub\"", "\"Docker\"", "\"Version Control\"", "\"CI/CD\"",
+    "\"PLC Programming\"", "\"Process Control\"", "\"Sensor Management\"", "\"Actuator Management\"",
+    "\"Troubleshooting\"", "\"Circuit Analysis\"", "\"Electrical Systems\"", "\"Mechanical Systems\"", "\"Maintenance\"",
+    "\"IT Service Management\"", "\"Issue Management\"", "\"Change Management\"", "\"Incident Management\"",
+    "\"Root Cause Analysis\"", "\"Performance Optimization\"", "\"System Troubleshooting\"",
+    "\"Agile\"", "\"Project Management\"", "\"Strategic Management\"",
+    "\"Analytical Thinking\"", "\"Communication\"", "\"Collaboration\"", "\"Time Management\"", "\"Adaptability\"", "\"Soft Skills\"",
+    "\"Graph Theory\"", "\"Statistical Analysis\"", "\"Algorithmic Thinking\"", "\"Mathematical Thinking\"",
+    "\"Power BI\"", "\"Learning\"",
+    "\"Azure DevOps\"", "\"Google BigQuery\"", "\"Cloud Technologies\"", "\"Advanced Features\"",
+    "\"Advanced Automation\"", "\"PLC Programming\"",
+    "\"Cryptographic Protocols\"", "\"Blockchain Concepts\"", "\"Security\"", "\"Cryptography\"",
+    "\"MATLAB\"", "\"Simulation\"", "\"Modeling\"", "\"Advanced Tools\"",
+    "\"Data Pipeline Development\"", "\"Data Architecture\"", "\"Engineering\""
 ];
+
 let textIndex = 0;
 let charIndex = 0;
 const typingEffect = document.getElementById("typing-effect");
