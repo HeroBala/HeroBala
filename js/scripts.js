@@ -71,19 +71,32 @@ const closeButton = document.getElementById('close-overlay');
 // Open overlay when hamburger is clicked
 hamburger.addEventListener('click', () => {
     overlay.classList.toggle('active');
+    hamburger.style.display = 'none'; // Hide the hamburger icon
 });
 
 // Close overlay when close button (×) is clicked
 closeButton.addEventListener('click', () => {
     overlay.classList.remove('active');
+    hamburger.style.display = 'block'; // Show the hamburger icon
 });
 
 // Close overlay when clicking outside of the overlay content
 overlay.addEventListener('click', (event) => {
     if (event.target === overlay) {
         overlay.classList.remove('active');
+        hamburger.style.display = 'block'; // Show the hamburger icon
     }
 });
+
+// Hide overlay when user scrolls
+window.addEventListener('scroll', () => {
+    if (overlay.classList.contains('active')) {
+        overlay.classList.remove('active'); // Remove the overlay if it's active
+        hamburger.style.display = 'block'; // Show the hamburger icon
+    }
+});
+
+
 
 // JavaScript for smooth scrolling to sections with animation
 const links = document.querySelectorAll('a[href^="#about"], a[href^="#projects"], a[href^="#contact"]');
