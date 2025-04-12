@@ -128,17 +128,16 @@ p {
 
 .overlay-content {
     position: absolute;
-    top: 255%;
+    top: 265%;
     left: 47%;
     transform: translate(-50%, -50%);
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
-    margin-bottom: 15px;
-    width: 75%;
-    padding: 15px;
-    background-color: rgba(177, 174, 174, 0.582);
+    width: 65%;
+    padding: 10%;
+    background-color: rgba(3, 3, 3, 0.788);
     border: #ffffff 2px solid;
     border-radius: 30px; /* Rounded corners */
 }
@@ -155,15 +154,14 @@ p {
 
 /* Close Button Style */
 .close-btn {
-    position: right;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1rem;
     color: rgb(255, 0, 0);
-    background-color: black;
-    border: rgb(255, 255, 255) 0.5px solid;
+    background-color: rgb(255, 255, 255);
     border-radius: 100%; /* Rounded corners */
-    padding: 10px;
+    padding: 3%;
     cursor: pointer;
     z-index: 1000;
     transition: color 0.3s ease;
