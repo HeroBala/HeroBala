@@ -13,9 +13,11 @@ html, body {
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000; /* Background color */
-    color: white; /* Text color */
+    background-color: #ffffff; /* White background */
+    color: black; /* Black text color */
 }
+
+/* Message Header Styling */
 .header.message {
     position: fixed;
     top: 50%;
@@ -43,6 +45,7 @@ body {
 .header.message button.close-message:hover {
     background-color: #a94442;
 }
+
 /* Container Styling */
 .nav_container {
     position: relative;
@@ -86,7 +89,7 @@ p {
 
 /* Button Styling (links) */
 .navbar a.button {
-    color: white; /* Button text color */
+    color: black; /* Button text color */
     text-decoration: none; /* Remove underline */
     font-size: 1rem;
     font-weight: 400;
@@ -105,7 +108,7 @@ p {
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); /* Set color to black */
     margin-right: 20px;
     transition: color 0.3s ease;
 }
@@ -141,7 +144,7 @@ p {
 
 .overlay a {
     font-size: 1rem;
-    color: white;
+    color: black; /* Button text color */
     text-decoration: none;
     display: block;
     background-color: rgba(255, 0, 0, 0.822);
@@ -195,7 +198,7 @@ section.Hero {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); /* Text color set to black */
     padding: 5px 0;
     text-align: center;
     margin-top: 10px;
@@ -206,9 +209,9 @@ section.Hero {
 
 /* About Section */
 section.about {
-    background-color: #000000;
+    background-color: #ffffff; /* White background */
     padding: 5px 0;
-    color: white;
+    color: black; /* Text color set to black */
     text-align: center;
 }
 
@@ -230,7 +233,7 @@ h3 {
     font-size: 1.5rem;
     margin-top: 40px;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: black; /* Text color set to black */
     font-weight: 600;
 }
 
@@ -244,8 +247,7 @@ h3 {
 }
 
 .skill-card {
-    background-color: #333333;
-    /* Dark background for the card */
+    background-color: #f7f7f7; /* Lighter background for card */
     padding: 20px;
     border-radius: 10px;
     /* Rounded corners */
@@ -276,14 +278,14 @@ h3 {
 
 .skill-card h4 {
     font-size: 1.2rem;
-    color: white;
+    color: black; /* Text color set to black */
     margin-bottom: 10px;
     font-weight: 600;
 }
 
 .skill-card p {
     font-size: 1rem;
-    color: #ddd;
+    color: #555; /* Darker gray text color */
     margin-top: 10px;
     line-height: 1.4;
 }
@@ -313,7 +315,7 @@ h3 {
 
 /* Feature Project Section */
 section.portfolio {
-    background-color: #000000;
+    background-color: #ffffff; /* White background */
     padding: 40px 0;
     text-align: left;
     margin-top: 20px;
@@ -326,7 +328,7 @@ section.portfolio {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 40px;
-    color: white;
+    color: black; /* Text color set to black */
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
@@ -339,7 +341,7 @@ section.portfolio {
 }
 
 .project-card {
-    background-color: #222222; /* Dark background for the card */
+    background-color: #f7f7f7; /* Lighter background for project card */
     padding: 20px;
     border-radius: 10px; /* Rounded corners for the card */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for the card */
@@ -366,14 +368,14 @@ section.portfolio {
 
 .project-title {
     font-size: 1.5rem;
-    color: white;
+    color: black; /* Text color set to black */
     margin-top: 20px;
     font-weight: 600;
 }
 
 .project-description {
     font-size: 1rem;
-    color: #ddd;
+    color: #555; /* Darker gray text color */
     margin-top: 10px;
     line-height: 1.4;
     flex-grow: 1;
@@ -389,7 +391,7 @@ section.portfolio {
 
 .read-more-btn {
     font-size: 1rem;
-    color: white;
+    color: black; /* Button text color */
     text-decoration: none;
     background-color: #ff0000;
     padding: 10px 15px;
@@ -425,10 +427,9 @@ section.portfolio {
     }
 }
 
-
 /* Contact Section */
 section.contact {
-    background-color: #020202;
+    background-color: #ffffff;  
     padding: 20px 0;
     text-align: left;
     margin-left: 10%;
@@ -454,7 +455,7 @@ form textarea {
 form button {
     padding: 10px 15px;
     font-size: 1rem;
-    color: rgb(0, 0, 0);
+    color: black; /* Text color set to black */
     background-color: #ffffff;
     border-radius: 0; /* Removed border-radius */
     cursor: pointer;
@@ -489,7 +490,7 @@ form button:active {
 /* Footer Styles */
 footer {
     text-align: center;
-    background-color: #000000;
+    background-color: #ffffff; /* White background */
     margin-bottom: 10px;
     padding: 10px;
     font-size: 14px;
@@ -508,7 +509,7 @@ footer {
     font-size: 1.5rem;
     margin-bottom: 2px;
     font-weight: 600;
-    color: #000000;
+    color: black; /* Text color set to black */
     padding-bottom: 1px;
     text-align: left;
 }
@@ -517,7 +518,7 @@ footer {
     font-size: 1rem;
     font-weight: 200;
     margin-bottom: 1px;
-    color: #000000;
+    color: black; /* Text color set to black */
     padding: 10px;
     border-radius: 0; /* Removed border-radius */
     background-color: rgba(177, 177, 177, 0.973);
