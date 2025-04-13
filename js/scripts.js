@@ -42,6 +42,55 @@ function type() {
 
 type();
 
+
+//close the message box when the close button is clicked
+document.getElementById('close-message').addEventListener('click', function() {
+    document.querySelector('.header.message').style.display = 'none';
+});
+
+// Function to update view count for a specific project
+function updateViewCount(projectId) {
+    // Get the project card by its data-id attribute
+    const projectCard = document.querySelector(`.project-card[data-id="${projectId}"]`);
+    
+    // Get the current view count (from the span inside the .views div)
+    const viewCountSpan = projectCard.querySelector('.view-count');
+    
+    // Parse the current view count, add 1 to it and update the span
+    let currentViews = parseInt(viewCountSpan.innerText);
+    currentViews += 1;
+    
+    // Update the view count in the span
+    viewCountSpan.innerText = currentViews;
+    
+    // Optional: Store the updated view count in localStorage to persist on page reload
+    localStorage.setItem(`project-${projectId}-views`, currentViews);
+}
+
+// Add event listeners to the "Read More" buttons
+document.querySelectorAll('.read-more-btn').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const projectCard = event.target.closest('.project-card');
+        const projectId = projectCard.getAttribute('data-id');
+        
+        // Update view count for this project
+        updateViewCount(projectId);
+    });
+});
+
+// On page load, retrieve the saved view count from localStorage if available
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.project-card').forEach(card => {
+        const projectId = card.getAttribute('data-id');
+        const savedViews = localStorage.getItem(`project-${projectId}-views`);
+        if (savedViews) {
+            card.querySelector('.view-count').innerText = savedViews;
+        }
+    });
+});
+
+
+
 // // Second typing effect for the title string "Data Engineer | Electrical Engineer | Innovator"
 // const titles = "Data Engineer | Electrical Engineer | Innovator";
 // let titleIndex = 0;

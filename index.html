@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
+<!--this page is under development message-->
+<div class="header message">
+    <h1>🚧 This page is under development 🚧</h1>
+    <p>Some of functions may not work, We are working hard to bring you the best experience. Stay tuned!</p>
+    <button class="close-message" id="close-message">Close</button>
+</div>
 
-<div class="container">
+<div class="nav_container">
     <header class="header">
-        <h1 style="color: red;">Hero Bala</h1>
+        <h1>Hero Bala</h1>
         <p>Data Engineer | Electrical Engineer | Innovator</p>
     </header>
     <nav class="navbar" id="navbar">
@@ -36,76 +42,120 @@
     <!-- End of Overlay Navigation -->
 </div>
 
-<section id="intro" class="intro">
+<section id="Hero" class="Hero">
     <div class="container2">
         <h2>Welcome to my personal website!</h2>
-        <p><span id="typing-effect"></span></p>
-        <a href="#contact" class="button">Learn More</a>
+        <p>I am an aspiring Data Engineer with a passion for creating efficient, high-performance data platforms. I have strong expertise in Python, SQL, cloud technologies, and a wide range of engineering and technical skills.</p>
     </div>
 </section>
 
 <section id="about" class="about">
     <div class="container2">
         <h2>About Me</h2>
-        <p>I am an aspiring Data Engineer with a passion for creating efficient, high-performance data platforms. I have strong expertise in Python, SQL, cloud technologies, and a wide range of engineering and technical skills.</p>
-        <ul>
-            <h3>Practicing Skills</h3>
-            <li>Data Analytics & Business Intelligence: Power BI, Excel, KPI Monitoring, Dashboard Development</li>
-            <li>Database Management: SQL, PostgreSQL</li>
-            <li>Programming Languages: Python, C++, Java, MATLAB</li>
-            <li>Data Processing & ETL: Data Pipeline Development, Data Warehousing</li>
-            <li>Advanced Data Analytics Techniques: Machine Learning Algorithms, Predictive Analytics</li>
-            <li>Version Control & CI/CD: Git, GitHub, Docker</li>
-            <li>Automation & PLC Programming: Process Control Programming, Sensor and Actuator Management</li>
-            <li>Electrical & Mechanical Systems: Troubleshooting, Circuit Analysis, Maintenance</li>
-            <li>IT Service Management: Issue, Change, and Incident Management</li>
-            <li>System Analysis & Troubleshooting: Root Cause Analysis, Performance Optimization</li>
-            <li>Project & Strategic Management: Agile</li>
-            <li>Soft Skills: Analytical Thinking, Communication, Collaboration, Time Management, Adaptability</li>
-            <li>Mathematical & Algorithmic Thinking: Graph Theory, Statistical Analysis</li>
-            
-            <h3>Learning Skills</h3>
-            <li>Power BI (Learning)</li>
-            <li>Cloud Technologies: Exploring Advanced Features of Azure DevOps, Google BigQuery</li>
-            <li>Advanced Automation & PLC Programming</li>
-            <li>Security & Cryptography: Exploring Cryptographic Protocols, Blockchain Concepts</li>
-            <li>Simulation & Modeling: Learning Advanced MATLAB and Simulation Tools</li>
-            <li>Data Architecture & Engineering: Improving Data Pipeline Development Skills</li> 
-        </ul>
+        <p><span id="typing-effect"></span></p>
+        <a href="#contact" class="button">Learn More</a>
+        <!-- Practicing Skills Section -->
+        <h3>Practicing Skills</h3>
+        <div class="skills-cards">
+            <div class="skill-card">
+                <img src="path_to_image/data-analytics.jpg" alt="Data Analytics" class="skill-image">
+                <h4>Data Analytics & Business Intelligence</h4>
+                <p>Power BI, Excel, KPI Monitoring, Dashboard Development</p>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/database-management.jpg" alt="Database Management" class="skill-image">
+                <h4>Database Management</h4>
+                <p>SQL, PostgreSQL</p>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/programming-languages.jpg" alt="Programming Languages" class="skill-image">
+                <h4>Programming Languages</h4>
+                <p>Python, C++, Java, MATLAB</p>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/etl.jpg" alt="Data Processing & ETL" class="skill-image">
+                <h4>Data Processing & ETL</h4>
+                <p>Data Pipeline Development, Data Warehousing</p>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/version-control.jpg" alt="Version Control & CI/CD" class="skill-image">
+                <h4>Version Control & CI/CD</h4>
+                <p>Git, GitHub, Docker</p>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/automation.jpg" alt="Automation & PLC Programming" class="skill-image">
+                <h4>Automation & PLC Programming</h4>
+                <p>Process Control Programming, Sensor and Actuator Management</p>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/powerbi-learning.jpg" alt="Power BI" class="skill-image">
+                <h4>Power BI (Learning)</h4>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/cloud-technologies.jpg" alt="Cloud Technologies" class="skill-image">
+                <h4>Cloud Technologies</h4>
+                <p>Exploring Advanced Features of Azure DevOps, Google BigQuery</p>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/advanced-automation.jpg" alt="Advanced Automation" class="skill-image">
+                <h4>Advanced Automation & PLC Programming</h4>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/security-cryptography.jpg" alt="Security & Cryptography" class="skill-image">
+                <h4>Security & Cryptography</h4>
+                <p>Exploring Cryptographic Protocols, Blockchain Concepts</p>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/simulation-modeling.jpg" alt="Simulation & Modeling" class="skill-image">
+                <h4>Simulation & Modeling</h4>
+                <p>Learning Advanced MATLAB and Simulation Tools</p>
+            </div>
+            <div class="skill-card">
+                <img src="path_to_image/data-architecture.jpg" alt="Data Architecture & Engineering" class="skill-image">
+                <h4>Data Architecture & Engineering</h4>
+                <p>Improving Data Pipeline Development Skills</p>
+            </div>
+      
+        
         <p>Feel free to explore my portfolio and contact me for any collaboration or opportunities.</p>
     </div>
 </section>
 
-<section id="portfolio" class="portfolio">
-    <div class="container2">
-        <h2>Featured Projects</h2>
-        
-        <div class="project">
-            <h3>Machine Learning Project</h3>
-            <p>Developed a machine learning model for predicting customer behavior, using various algorithms such as decision trees and SVM. The project helped the client increase customer retention by 20%.</p>
-            <a href="#" target="_blank">View Project</a>
-        </div>
-        
-        <div class="project">
-            <h3>Text Mining Project</h3>
-            <p>Created a text mining solution for sentiment analysis, processing customer feedback to provide actionable insights. Achieved a 90% accuracy rate in sentiment classification.</p>
-            <a href="#" target="_blank">View Project</a>
+
+
+<section class="portfolio">
+    <h2>Feature Projects</h2>
+    <div class="project-cards">
+        <!-- Project 1 -->
+        <div class="project-card" data-id="1">
+            <img src="path_to_image/project1.jpg" alt="Project 1" class="project-image">
+            <h3 class="project-title">Project 1</h3>
+            <p class="project-description">This is a brief description of Project 1. Learn more about it by reading the full details.</p>
+            <div class="project-footer">
+                <a href="project1_details.html" class="read-more-btn">Read More</a>
+                <div class="views">
+                    <i class="fa fa-eye"></i> <span class="view-count">0</span> Views
+                </div>
+            </div>
         </div>
 
-        <div class="project">
-            <h3>Neural Network Project</h3>
-            <p>Designed and implemented a deep learning neural network for image classification, achieving a 95% accuracy rate on the dataset. Utilized TensorFlow and Keras for model building.</p>
-            <a href="#" target="_blank">View Project</a>
+        <!-- Project 2 -->
+        <div class="project-card" data-id="2">
+            <img src="path_to_image/project2.jpg" alt="Project 2" class="project-image">
+            <h3 class="project-title">Project 2</h3>
+            <p class="project-description">This is a brief description of Project 2. Explore it further by reading more.</p>
+            <div class="project-footer">
+                <a href="project2_details.html" class="read-more-btn">Read More</a>
+                <div class="views">
+                    <i class="fa fa-eye"></i> <span class="view-count">0</span> Views
+                </div>
+            </div>
         </div>
         
-        <div class="project">
-            <h3>Digital Assistant Project</h3>
-            <p>Built a virtual digital assistant capable of performing tasks such as scheduling, reminders, and general inquiries using natural language processing (NLP) and machine learning algorithms.</p>
-            <a href="#" target="_blank">View Project</a>
-        </div>
-        
+        <!-- Additional Projects can be added similarly -->
     </div>
 </section>
+
 
 
 <section id="contact" class="contact">
@@ -139,3 +189,12 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
