@@ -10,95 +10,71 @@ html, body {
     height: 100%;
 }
 
-/* General body styling */
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; /* Background color for the page */
-    color: white; /* Default text color */
+    background-color: #000000; /* Background color */
+    color: white; /* Text color */
 }
 
-/* Container styling */
+/* Container Styling */
 .container {
-    position: relative; /* Sticky position to stay on top of the viewport */
-    top: 10px; /* Sticks to the top of the viewport with a 10px offset */
-    left: 0; /* Aligns to the left of the viewport */
-    right: 0; /* Aligns to the right of the viewport */
+    position: relative;
+    top: 10px;
     display: flex;
-    justify-content: space-between; /* Aligns children to opposite sides */
-    align-items: center; /* Centers content vertically */
+    justify-content: space-between; /* Align items on opposite sides */
+    align-items: center; /* Center items vertically */
     padding: 1%;
-    margin: 0 auto; /* Centers the container horizontally */
-    margin-top: 5px; /* Adds space from the top */
-    margin-bottom: 30px; /* Adds space from the bottom */
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #000000; /* Container background color */
-    background-image: url('../images/nav-bg.png'); /* Background image for the container */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    border-radius: 50px; /* Rounded corners */
-    border-bottom: red 1px solid; /* Red underline for the container */
-    box-shadow: 0 10px 10px rgba(131, 2, 2, 0.877); /* Shadow effect for the container */
 }
 
-
-/* Header styling */
+/* Header Styling */
 .header {
-    text-align: left; 
+    text-align: left;
     padding: 5px;
-    color: rgb(255, 255, 255); /* Header text color */
 }
 
-/* Ensure the header text does not get squeezed */
 h1 {
     margin-left: 20px;
     margin-top: 5px;
     font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-    font-weight: 600; /* Bold font weight for header */ 
+    font-weight: 600; /* Bold font weight */
+}
 
-}
-p1 {
-    margin-left: 25px;
-    font-size: 0.8rem;
-    color: #ffffff; /* Softer color for subtitle */
-}
+/* Paragraph Styling */
 p {
     margin: 5px 0;
     font-size: 1rem;
-    color: #ffffff;
-    padding: 10px; /* Softer color for subtitle */
+    padding: 10px;
 }
 
-/* Navbar styling */
+/* Navbar Styling */
 .navbar {
     display: flex;
-    justify-content: flex-end; /* Aligns navigation to the right */
+    justify-content: flex-end; /* Align navigation items to the right */
 }
 
-/* Button styling (links) */
+/* Button Styling (links) */
 .navbar a.button {
-    color: rgb(0, 0, 0);
+    color: white; /* Button text color */
     text-decoration: none; /* Remove underline */
     font-size: 1rem;
     font-weight: 400;
     padding: 10px 20px;
     margin: 0 10px;
-    border-radius: 50px; /* Rounded corners */
-    background-color:#ffffff; /* Green background color */
-    border-color: red 2px solid; /* Red border color */
     transition: all 0.3s ease;
 }
 
-/* Hover effect for buttons */
+/* Underline on Hover */
 .navbar a.button:hover {
-    background-color: rgba(255, 0, 0, 0.924);
-    color: rgb(255, 255, 255);
-    border-color: rgb(72, 255, 0); /* Change border color to purple */
+    text-decoration: underline; /* Underline text on hover */
+    color: rgb(255, 0, 0); /* Red text color on hover */
 }
+
 /* Hamburger Menu */
 .hamburger {
     display: none;
@@ -109,7 +85,7 @@ p {
     transition: color 0.3s ease;
 }
 
-/* Overlay Styles */
+/* Overlay Styling */
 .overlay {
     display: none;
     position: fixed;
@@ -135,8 +111,6 @@ p {
     width: 80%;
     max-width: 400px;
     background-color: rgba(56, 49, 49, 0.911);
-    border: 2px solid #fff;
-    border-radius: 20px;
     padding: 30px 20px;
 }
 
@@ -150,9 +124,9 @@ p {
     margin-left: 20%;
     margin-right: 20%;
     padding: 10px;
-    border-radius: 10px;
     transition: background-color 0.3s;
 }
+
 /* Close Button Style */
 .close-btn {
     position: absolute;
@@ -160,8 +134,7 @@ p {
     right: 5%;
     font-size: 1.1rem;
     color: rgb(255, 0, 0);
-    background-color: rgb(78, 65, 65);
-    border: white 1px solid;
+    background-color: rgb(163, 143, 143);
     padding: 2%;
     border-radius: 100%;
     cursor: pointer;
@@ -191,22 +164,6 @@ p {
     }
 }
 
-
-.button {
-    display: flex;
-    justify-content: center;
-    margin-top: 1px;
-    color: rgb(0, 0, 0);
-    padding: 10px 10px; 
-    border-radius: 50px;
-    background-color: #ffffff;
-    text-decoration: none; /* Remove underline */
-    font-size: 1rem;
-}
-.button:hover {
-    background-color: #ff0000;
-    color: #ffffff;
-}
 /* Hero Section */
 section.intro {
     display: flex;
@@ -214,100 +171,30 @@ section.intro {
     justify-content: center;
     align-items: center;
     color: rgb(11, 255, 43);
-    text-shadow: rgb(0, 0, 0) 0.5px 0.5px 0.5px; /* Text shadow for header */
     padding: 80px 0;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 10%;
     margin-right: 10%;
-    border-radius: 30px; /* Rounded corners */
-    position: relative; /* This is needed to position the ::after pseudo-element */
-    overflow: hidden; /* Ensures no overflow of the blurred background */
 }
 
-section.intro::after {
-    content: ''; /* Creates an empty pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/header\ bg.png'); /* Your background image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(px); /* Adjust12 the blur level */
-    z-index: -1; /* Places the blurred image behind the content */
-}
-
-
-.container2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-}
-
-.intro h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-    animation: fadeIn 1s ease-out;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
-}
-
-.intro p {
-    font-size: 1rem;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    animation: fadeIn 1.5s ease-out;
-}
-/* Typing effect */
-#typing-effect {
-    display: inline;
-    border-right: 2px solid rgb(255, 0, 0);
-    animation: blink 0.7s step-end infinite;
-}
-
-@keyframes blink {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: rgb(0, 0, 0);
-    }
-}
-/* About Section */
 /* About Section */
 section.about {
-    background-image: url('../images/bg.png'); /* Adjusted path to go up one level */
-    background-size: cover;
-    background-position: center; /* Centers the image */
+    background-color: #000000; /* Solid color background */
     padding: 10px 0;
-    text-align: center;
-    border-radius: 30px; /* Rounded corners */
+    text-align: left;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10px;
     margin-bottom: 20px;
 }
-
 
 .about h2 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 5px;
-    border-bottom: red 2px solid; /* Red underline for the title */
-    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
-    padding-bottom: 10px; /* Padding for the title */
+    padding-bottom: 10px;
 }
 
 .about p {
@@ -315,101 +202,74 @@ section.about {
     margin-bottom: 20px;
     line-height: 1.5;
 }
+
 .about h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    text-align:center;
-    margin-left: auto;
     font-weight: 600;
 }
+
 .about ul {
     list-style: none;
     padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 50px;
-    margin-top: 50px;
-    text-align: left;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 1800px;
-    border: 2px solid #ddd;
-    background-color: rgba(0, 0, 0, 0.61);
-    border-radius: 30px;
 }
 
 .about ul li {
     font-size: 1.1rem;
     margin-bottom: 10px;
-    position: relative;
-    padding-left: 25px;
-}
-
-.about ul li:before {
-    content: '✔';
-    position: absolute;
-    left: 0;
-    color: #007bff;
+    padding-left: 0; /* Removed the tick symbol and padding */
 }
 
 /* Portfolio Section */
 section.portfolio {
     background-color: #000000;
-    background-image: url('../images/project-bg.png'); /* Replace with the image path */
-    background-size: cover; /* Ensure the image covers the entire section */
     padding: 20px 0;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10%;
     margin-right: 10%;
-    border-radius: 30px; /* Rounded corners */
 }
 
 .portfolio h2 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 10px;
-    margin-bottom: 20px;
-    border-bottom: red 2px solid; /* Red underline for the title */
-    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
 }
 
 .project {
-    background-color: #000000d0;
+    background-color: transparent;
     padding: 30px;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    border: white 2px solid;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
     transform: translateY(-5px);
 }
+
 .project a {
     text-decoration: none;
-    color: #000000; /* White color for the link */
+    color: #ffffff;
     font-size: 0.9rem;
     font-weight: 600;
-    background-color: #ffffff;
-    border: red;
-    border-radius: 30px; /* Rounded corners */
     padding: 10px 20px;
     transition: background-color 0.3s ease;
 }
+
 .project a:hover {
     background-color: #ff0000;
-    color: #ffffff; /* White color for the link */
+    color: #ffffff;
 }
+
 .project h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
-    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */
 }
 
 .project p {
@@ -420,28 +280,18 @@ section.portfolio {
 /* Contact Section */
 section.contact {
     background-color: #020202;
-    background-image: url('../images/contact-bg.png'); /* Replace with the image path */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    border-radius: 30px; /* Rounded corners */
+    padding: 20px 0;
+    text-align: left;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 20px 0;
-    text-align: center;
-    border-top: 1px solid #ddd;
 }
-
 
 .contact h2 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 20px;
-    border-bottom: red 2px solid; /* Red underline for the title */
-    text-shadow: red 0.5px 0.5px 0.5px; /* Text shadow for header */   
-
 }
 
 form input,
@@ -449,8 +299,6 @@ form textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
     font-size: 1rem;
 }
 
@@ -459,7 +307,7 @@ form button {
     font-size: 1rem;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
-    border-radius: 30px;
+    border-radius: 0; /* Removed border-radius */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -471,73 +319,61 @@ form button:hover {
 form button:active {
     transform: scale(0.98);
 }
-/* Wrapper container for map */
-/* Remove any default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-}
 
-/* Map container with a responsive design */
+/* Map Container */
 .map-container {
     position: relative;
-    width: 100%; /* Full width of the parent container */
-    padding-bottom: 28%; /* Maintain 16:9 aspect ratio */
-    height: 0; /* This will adjust the height based on padding */
+    width: 100%;
+    padding-bottom: 28%;
+    height: 0;
     overflow: hidden;
 }
 
-/* Ensure iframe fits within the container */
 .map-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 30px; /* Rounded corners */
 }
 
-/* Footer styles */
+/* Footer Styles */
 footer {
     text-align: center;
-    background-color: #000000; /* Dark background color */
-    background-image: url('../images/footer-bg.png'); /* Replace with the image path */
-    background-size: cover; /* Ensure the image covers the entire footer */
-    color: rgb(0, 0, 0);
+    background-color: #000000;
     margin-bottom: 10px;
     padding: 10px;
     font-size: 14px;
     margin-left: 10%;
     margin-right: 10%;
-    border-radius: 30px; /* Rounded corners */      
-    position:sticky;
+    position: sticky;
 }
+
 .footer-content {
-    max-width: 1500px; /* Limit the width of the footer content */
-    margin: 0 auto; /* Center the footer content */
+    max-width: 1500px;
+    margin: 0 auto;
     padding: 20px;
-    margin-bottom: 10px;
 }
-.footer-content h2
-{
+
+.footer-content h2 {
     font-size: 1.5rem;
     margin-bottom: 2px;
     font-weight: 600;
-    color: #000000; /* Green color for the title */
-    border-bottom: #ff0000 2px solid; /* Red underline for the title */
+    color: #000000;
     padding-bottom: 1px;
-    text-align: center; /* Center the title */
-    text-shadow: #ff0000 0.5px 0.5px 0.5px; /* Text shadow for header */
+    text-align: left;
 }
+
 .footer-content p {
     font-size: 1rem;
     font-weight: 200;
     margin-bottom: 1px;
-    color: #000000; /* White color for the text */
-    padding: 10px; /* Padding for the text */
-    border-radius: 10px; /* Rounded corners */
-    background-color: rgba(177, 177, 177, 0.973); /* Light background color for the text */
+    color: #000000;
+    padding: 10px;
+    border-radius: 0; /* Removed border-radius */
+    background-color: rgba(177, 177, 177, 0.973);
 }
+
 /* Animations */
 @keyframes fadeIn {
     0% {
@@ -549,4 +385,3 @@ footer {
         transform: translateY(0);
     }
 }
-
