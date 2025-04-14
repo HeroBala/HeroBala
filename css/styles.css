@@ -239,7 +239,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-    margin-top: 30px;
+    margin-top: 1px;
     margin-bottom: 5px;
     color: black; /* Text color set to black */
     font-weight: 200;
@@ -456,6 +456,19 @@ section.contact {
     font-weight: 800;
     margin-bottom: 20px;
 }
+form {
+border-color: black 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f7f7f7; /* Lighter background for form */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for the form */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+form:hover {
+    transform: translateY(-5px); /* Lift form on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect on hover */
+}
 
 form input,
 form textarea {
@@ -464,6 +477,8 @@ form textarea {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 1.1rem;
+    background-color: rgba(0, 0, 0, 0.041);
+    border-radius: 10px;
 }
 
 form button {
