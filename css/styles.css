@@ -33,7 +33,7 @@ body {
 }
 
 .header.message button.close-message {
-    background-color: #721c24;
+    background-color: #ff0019;
     color: #fff;
     border: none;
     padding: 10px 15px;
@@ -70,15 +70,18 @@ body {
 h1 {
     margin-left: 10px;
     margin-top: 5px;
-    font-size: 1.5rem;
-    font-weight: 600; /* Bold font weight */
+    font-size: 2rem; /* Increased font size for better visibility */
+    font-weight: 400; /* Bold font weight for emphasis */
+    font-family: "Brush Script MT", cursive; /* Cursive font style */
+    color: #d60000; /* Bright orange color for clarity */
+    text-shadow: 1px 2px 1px rgba(190, 190, 190, 0.829); /* Add shadow for better contrast */
 }
 
 /* Paragraph Styling */
 p {
-    margin: 5px 0;
+    margin: 1px 0;
     font-size: 1rem;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* Navbar Styling */
@@ -92,8 +95,8 @@ p {
     color: black; /* Button text color */
     text-decoration: none; /* Remove underline */
     font-size: 1rem;
-    font-weight: 400;
-    padding: 10px 20px;
+    font-weight: 120;
+    padding: 1px 1px;
     margin: 0 10px;
     transition: all 0.3s ease;
 }
@@ -199,10 +202,9 @@ section.Hero {
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0); /* Text color set to black */
-    padding: 5px 0;
+    padding: 2px 0;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 1px;
+    margin-top: 1px;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -210,7 +212,7 @@ section.Hero {
 /* About Section */
 section.about {
     background-color: #ffffff; /* White background */
-    padding: 5px 0;
+    padding: 2px 0;
     color: black; /* Text color set to black */
     text-align: center;
 }
@@ -218,23 +220,24 @@ section.about {
 .container2 {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 500;
     letter-spacing: 1px;
+    border-bottom: black solid 2px;
+    padding-bottom: 5px;
 }
 
 h3 {
-    font-size: 1.5rem;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 5px;
     color: black; /* Text color set to black */
-    font-weight: 600;
+    font-weight: 120;
 }
 
 /*skills Card Layout */
@@ -242,13 +245,15 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* Responsive grid */
-    gap: 20px;
+    gap: 5px;
     margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .skill-card {
     background-color: #f7f7f7; /* Lighter background for card */
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
     /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -263,13 +268,14 @@ h3 {
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .skill-image {
     width: 100%;
-    height: 150px;
+    height:200px; /* Fixed height for consistency */
+    /* Set a fixed height for the image */      
     object-fit: cover;
     /* Ensure the image covers the area without distortion */
     border-radius: 10px;
@@ -279,14 +285,14 @@ h3 {
 .skill-card h4 {
     font-size: 1.2rem;
     color: black; /* Text color set to black */
-    margin-bottom: 10px;
-    font-weight: 600;
+    margin-bottom: 1px;
+    font-weight: 120;
 }
 
 .skill-card p {
     font-size: 1rem;
     color: #555; /* Darker gray text color */
-    margin-top: 10px;
+    margin-top: 1px;
     line-height: 1.4;
 }
 
@@ -325,8 +331,8 @@ section.portfolio {
 }
 
 .portfolio h2 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 120;
     margin-bottom: 40px;
     color: black; /* Text color set to black */
     text-transform: uppercase;
@@ -367,10 +373,10 @@ section.portfolio {
 }
 
 .project-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black; /* Text color set to black */
     margin-top: 20px;
-    font-weight: 600;
+    font-weight: 120;
 }
 
 .project-description {
@@ -416,7 +422,7 @@ section.portfolio {
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .portfolio h2 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
     .project-card {
         padding: 15px;
@@ -439,8 +445,8 @@ section.contact {
 }
 
 .contact h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 120;
     margin-bottom: 20px;
 }
 
@@ -474,55 +480,59 @@ form button:active {
 .map-container {
     position: relative;
     width: 100%;
-    padding-bottom: 28%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for the map */
     height: 0;
     overflow: hidden;
+    margin-bottom: 1px;/* Ensure there's space between the map and footer */
+    margin-left: 10%; 
+    margin-right: 10%;
+
 }
 
 .map-container iframe {
-    position: absolute;
+    position: center;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; /* Use full height of the container */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     background-color: #ffffff; /* White background */
-    margin-bottom: 10px;
-    padding: 10px;
+    padding: 10% 10%; /* Add padding and margin to center footer */
     font-size: 14px;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: sticky;
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Adjust width to make footer narrower and centered */
+    margin-top: 20px; /* Add some space between footer and content above */
 }
 
 .footer-content {
-    max-width: 1500px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2px;
 }
 
-.footer-content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 2px;
-    font-weight: 600;
+.footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 120;
     color: black; /* Text color set to black */
-    padding-bottom: 1px;
-    text-align: left;
+    padding-bottom: 5px;
+    text-align: center;
+    border: none;
 }
 
-.footer-content p {
+.footer p {
     font-size: 1rem;
-    font-weight: 200;
-    margin-bottom: 1px;
+    font-weight: 120;
     color: black; /* Text color set to black */
-    padding: 10px;
-    border-radius: 0; /* Removed border-radius */
-    background-color: rgba(177, 177, 177, 0.973);
+    padding: 1px;
+    margin: 0;
 }
+
+
 
 /* Animations */
 @keyframes fadeIn {
