@@ -71,7 +71,7 @@ h1 {
     margin-left: 10px;
     margin-top: 5px;
     font-size: 2rem; /* Increased font size for better visibility */
-    font-weight: 400; /* Bold font weight for emphasis */
+    font-weight: 800; /* Bold font weight for emphasis */
     font-family: "Brush Script MT", cursive; /* Cursive font style */
     color: #d60000; /* Bright orange color for clarity */
     text-shadow: 1px 2px 1px rgba(190, 190, 190, 0.829); /* Add shadow for better contrast */
@@ -80,7 +80,7 @@ h1 {
 /* Paragraph Styling */
 p {
     margin: 1px 0;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 5px;
 }
 
@@ -94,8 +94,8 @@ p {
 .navbar a.button {
     color: black; /* Button text color */
     text-decoration: none; /* Remove underline */
-    font-size: 1rem;
-    font-weight: 120;
+    font-size: 1.1rem;
+    font-weight: 200;
     padding: 1px 1px;
     margin: 0 10px;
     transition: all 0.3s ease;
@@ -146,7 +146,7 @@ p {
 }
 
 .overlay a {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: black; /* Button text color */
     text-decoration: none;
     display: block;
@@ -224,20 +224,20 @@ section.about {
 }
 
 h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 5px;
-    font-weight: 500;
+    font-weight: 200;
     letter-spacing: 1px;
     border-bottom: black solid 2px;
     padding-bottom: 5px;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 30px;
     margin-bottom: 5px;
     color: black; /* Text color set to black */
-    font-weight: 120;
+    font-weight: 200;
 }
 
 /*skills Card Layout */
@@ -245,15 +245,15 @@ h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* Responsive grid */
-    gap: 5px;
+    gap: 25px;
     margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .skill-card {
     background-color: #f7f7f7; /* Lighter background for card */
-    padding: 5px;
+    padding: 15px;
     border-radius: 10px;
     /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -283,14 +283,14 @@ h3 {
 }
 
 .skill-card h4 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: black; /* Text color set to black */
     margin-bottom: 1px;
-    font-weight: 120;
+    font-weight: 200;
 }
 
 .skill-card p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555; /* Darker gray text color */
     margin-top: 1px;
     line-height: 1.4;
@@ -331,8 +331,8 @@ section.portfolio {
 }
 
 .portfolio h2 {
-    font-size: 1.2rem;
-    font-weight: 120;
+    font-size: 1.5rem;
+    font-weight: 800;
     margin-bottom: 40px;
     color: black; /* Text color set to black */
     text-transform: uppercase;
@@ -373,14 +373,14 @@ section.portfolio {
 }
 
 .project-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: black; /* Text color set to black */
     margin-top: 20px;
-    font-weight: 120;
+    font-weight: 800;
 }
 
 .project-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555; /* Darker gray text color */
     margin-top: 10px;
     line-height: 1.4;
@@ -392,11 +392,11 @@ section.portfolio {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .read-more-btn {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: black; /* Button text color */
     text-decoration: none;
     background-color: #ff0000;
@@ -410,7 +410,7 @@ section.portfolio {
 }
 
 .views {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #ccc;
 }
 
@@ -422,7 +422,7 @@ section.portfolio {
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .portfolio h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .project-card {
         padding: 15px;
@@ -445,8 +445,8 @@ section.contact {
 }
 
 .contact h2 {
-    font-size: 1.2rem;
-    font-weight: 120;
+    font-size: 1.5rem;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
@@ -455,12 +455,12 @@ form textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 form button {
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: black; /* Text color set to black */
     background-color: #ffffff;
     border-radius: 0; /* Removed border-radius */
@@ -515,9 +515,9 @@ footer {
 }
 
 .footer h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
-    font-weight: 120;
+    font-weight: 800;
     color: black; /* Text color set to black */
     padding-bottom: 5px;
     text-align: center;
@@ -525,8 +525,8 @@ footer {
 }
 
 .footer p {
-    font-size: 1rem;
-    font-weight: 120;
+    font-size: 1.1rem;
+    font-weight: 800;
     color: black; /* Text color set to black */
     padding: 1px;
     margin: 0;
