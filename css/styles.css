@@ -69,10 +69,10 @@ body {
 }
 
 h1 {
-    font-size: 1.4rem; /* Increased font size for better visibility */
+    font-size: 1.2rem; /* Increased font size for better visibility */
     font-weight: 500; /*Bold font weight for emphasis */
     color: white; /* Bright orange color for clarity */
-    padding: 5px;
+    padding: 10px;
     text-align: center; /* Centered text for better aesthetics */
     background-color: #000000; /* Bright orange background for contrast */
     border-radius: 10px; /* Rounded corners for a softer look */
