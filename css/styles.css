@@ -59,6 +59,7 @@ body {
     margin-bottom: 30px;
     margin-left: 5%;
     margin-right: 5%;
+    border-bottom: #000000 solid 2px; /* Bottom border for separation */
 }
 
 /* Header Styling */
@@ -68,20 +69,22 @@ body {
 }
 
 h1 {
-    margin-left: 10px;
-    margin-top: 5px;
-    font-size: 2rem; /* Increased font size for better visibility */
-    font-weight: 800; /* Bold font weight for emphasis */
-    font-family: "Brush Script MT", cursive; /* Cursive font style */
-    color: #d60000; /* Bright orange color for clarity */
-    text-shadow: 1px 2px 1px rgba(190, 190, 190, 0.829); /* Add shadow for better contrast */
+    font-size: 1.4rem; /* Increased font size for better visibility */
+    font-weight: 500; /*Bold font weight for emphasis */
+    color: white; /* Bright orange color for clarity */
+    padding: 5px;
+    text-align: center; /* Centered text for better aesthetics */
+    background-color: #000000; /* Bright orange background for contrast */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Paragraph Styling */
 p {
     margin: 1px 0;
-    font-size: 1.1rem;
-    padding: 5px;
+    font-size: 1rem;
+    padding: 1px;
 }
 
 /* Navbar Styling */
@@ -221,6 +224,7 @@ section.about {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
+    text-align: center;
 }
 
 h2 {
@@ -241,15 +245,17 @@ h3 {
     font-weight: 200;
 }
 
-/*skills Card Layout */
+/* Skills Card Layout */
 .skills-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* Responsive grid */
     gap: 25px;
     margin-top: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center; /* Center the cards horizontally */
+    max-width: 1200px; /* Optional: Limit the maximum width */
 }
 
 .skill-card {
@@ -455,6 +461,7 @@ form input,
 form textarea {
     width: 100%;
     padding: 15px;
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 1.1rem;
 }
