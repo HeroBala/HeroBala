@@ -173,19 +173,79 @@
     </div>
 </section>
 
-
-<footer>
-    <p>📍 Brno, Czech Republic</p>
-    <h2>Find Me On Map</h2>
-    <div class="map-container" style="width: 100%; margin-left: 10%; margin-right: 10%;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20849.568161260548!2d16.609380934765632!3d49.215809500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129533ae9c5587%3A0xf26d02b22d77f397!2sHERO%20BALA!5e0!3m2!1sen!2scz!4v1743773018857!5m2!1sen!2scz" 
-            style="border:0; width: 100%; height: 400px;" 
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="footer-content">
-        <p>&copy; 2025 Hero Bala. All Rights Reserved. <br> 📞 +420 608 147 604 | 📧 1997herobala@gmail.com</p>
+<footer class="footer">
+    <div class="footer-container">
+        <p class="footer-location">📍 Brno, Czech Republic</p>
+        <h2 class="footer-title">Find Me On Map</h2>
+        <div class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20849.568161260548!2d16.609380934765632!3d49.215809500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47129533ae9c5587%3A0xf26d02b22d77f397!2sHERO%20BALA!5e0!3m2!1sen!2scz!4v1743773018857!5m2!1sen!2scz"
+                class="footer-map-iframe"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+        <div class="footer-info">
+            <p>&copy; 2025 <strong>Hero Bala</strong>. All Rights Reserved.</p>
+            <p>📞 +420 608 147 604 | 📧 1997herobala@gmail.com</p>
+        </div>
     </div>
 </footer>
+<style>
+.footer {
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 40px;
+    padding: 32px 0 16px 0;
+    text-align: center;
+}
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.footer-location {
+    font-size: 1.1rem;
+    margin-bottom: 0.5em;
+}
+.footer-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0.5em 0 1em 0;
+}
+.footer-map {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 1.5em auto;
+}
+.footer-map-iframe {
+    width: 100%;
+    height: 420px;
+    min-height: 320px;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: block;
+}
+.footer-info {
+    font-size: 0.97rem;
+    color: #555;
+    margin-top: 1em;
+}
+@media (max-width: 700px) {
+    .footer-map {
+        max-width: 100%;
+    }
+    .footer-map-iframe {
+        height: 320px;
+        min-height: 180px;
+    }
+    .footer-container {
+        padding: 0 4vw;
+    }
+}
+</style>
 
 <script src="js/scripts.js"></script> <!-- Link to external JavaScript -->
 
