@@ -147,13 +147,29 @@
 <section id="contact" class="contact">
     <div class="container2">
         <h2>Get in Touch</h2>
-        <p>Feel free to reach out for collaborations, project inquiries, or if you want to discuss any of my work.</p>
-        <form action="https://formspree.io/f/mvgkdgry" method="POST" id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>      
+        <p>Feel free to reach out for collaborations, project inquiries, or just to say hello!</p>
+        <form
+            action="https://formspree.io/f/mldbydvv"
+            method="POST"
+            class="contact-form"
+            autocomplete="on"
+        >
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="message"><i class="fas fa-comment-dots"></i> Your Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Type your message here..." class="form-control"></textarea>
+            </div>
+            <button type="submit" class="button"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+    </div>
+</section>
     </div>
 </section>
 
